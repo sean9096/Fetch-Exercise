@@ -1,8 +1,10 @@
 To run the application Docker must be installed:
 
-1. Build Docker image via command: "docker build . -t takehome"
+1. Build Jar file via command: "./mvnw clean install"
 
-2. After image has successfully built run docker image via command: "docker run -it -p 8080:8080 takehome"
+2. Build Docker image via command: "docker build . -t takehome"
+
+3. After image has successfully built run docker image via command: "docker run -it -p 8080:8080 takehome"
 
 To test application:
 
