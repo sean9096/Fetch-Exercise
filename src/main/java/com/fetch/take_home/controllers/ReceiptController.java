@@ -33,6 +33,9 @@ public class ReceiptController {
             logger.info("Executing /receipts/process");
             ReceiptResponse response = receiptService.processReciept(receipt);
             return new ResponseEntity<>(response, HttpStatus.OK);
+        } catch (NullPointerException e) {
+            logger.info("Invalid Receipt");
+            return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
         } catch (Exception e) {
             logger.info("Failed executing /receipts/process, Error: " + e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -44,7 +47,8 @@ public class ReceiptController {
         try {
             logger.info("Executing /receipts/{id}/points");
             PointsResponse response = receiptService.getPoints(id);
-            return new ResponseEntity<>(response, HttpStatus.OK);
+            return (response != null) ? new ResponseEntity<>(response, HttpStatus.OK)
+                    : new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
         } catch (Exception e) {
             logger.info("Failed executing /receipts/{id}/points, Error: " + e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

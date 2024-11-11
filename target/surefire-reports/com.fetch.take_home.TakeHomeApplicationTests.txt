@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.fetch.take_home.TakeHomeApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.427 s -- in com.fetch.take_home.TakeHomeApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.893 s -- in com.fetch.take_home.TakeHomeApplicationTests

@@ -50,6 +50,6 @@ public class ReceiptServiceImpl {
                 return new PointsResponse(rewards.get("points").asInt());
         }
 
-        return new PointsResponse(0); // In the case of a non-exsistent id we return 0
+        return null; // In the case of a non-exsistent id we return 0
     }
 }
