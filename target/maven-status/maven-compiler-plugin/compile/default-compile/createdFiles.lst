@@ -1,0 +1,10 @@
+com\fetch\take_home\entities\RewardPointsEntity.class
+com\fetch\take_home\utils\ReceiptProcessLogic.class
+com\fetch\take_home\controllers\ReceiptController.class
+com\fetch\take_home\data\Item.class
+com\fetch\take_home\data\Receipt.class
+com\fetch\take_home\data\RewardPostData.class
+com\fetch\take_home\TakeHomeApplication.class
+com\fetch\take_home\services\ReceiptServiceImpl.class
+com\fetch\take_home\data\PointsResponse.class
+com\fetch\take_home\data\ReceiptResponse.class
